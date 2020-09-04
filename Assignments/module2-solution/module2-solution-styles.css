@@ -1,0 +1,112 @@
+/*
+	Author: Gustavo Alves
+	Date: 
+*/
+
+/* General Styles & Desktop Styles*/
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+body {background-color: #BBBBBB}
+
+#pageTitle{
+	position: relative;
+	width:100%;
+	text-align: center;
+	margin: 33px 0px;
+	font-size: 54px;
+	font-weight: bold;
+}
+
+#content {
+	margin: 20px 10px;
+	display: table;
+}
+
+.border4 {
+	border: 1px solid #000;
+}
+
+.border2 {
+	border-left: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+
+div {
+	background: #789;
+}
+
+h2 {
+	text-align: right;
+}
+
+h2 span {
+	display: inline-block;
+	padding: 6px 50px;
+	font-size: 22px;
+	border-radius: 0px 0px 0px 10px;
+	font-weight: bold;
+}
+
+div div {
+	margin: 9px 18px;
+}
+
+div:nth-child(1) span {
+	background-color: #111122;
+	color: #fff;
+}
+
+div:nth-child(2) span {
+	background-color: #555544;
+	color: #fff;
+}
+
+div:nth-child(3) span {
+	background-color: #886655;
+}
+
+.lg-screen {
+	float: left;
+	display: table-cell;
+	width: calc((100% - (10px * 6)) / 3);
+	margin: 10px;
+}
+
+
+
+
+
+/* Desktop: 992px and above */
+	/*Desktop: 3 sections take equal */
+
+
+
+/* Tablet: 768px to 991px */
+	/* Tablet: 1st and 2nd sections should be in the 1st row. 
+			3rd secttion should be in the second row.*/
+@media (min-width: 768px) and (max-width: 991px) {
+	.md-screen {
+		width: calc((100% - (10px * 4)) / 2);
+	}
+
+	#content div:nth-child(3)  {
+		width: calc(100% - (10px * 2));
+	}
+}
+
+
+/* Mobile: 767px and below */
+	/* Mobile: each section should take an entire row; */
+@media (max-width: 767px) {
+	.sm-screen {
+		width: calc(100% - (10px * 2));
+	}
+
+}
+
+
