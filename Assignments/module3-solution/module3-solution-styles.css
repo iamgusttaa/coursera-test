@@ -1,0 +1,145 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 16px;
+	color: #fff;
+	background-color: #eee;
+}
+
+
+/* NAVBAR */
+nav#header-nav {
+	background-color: #000;
+	border-radius: 0;
+	border: 0;
+	height: auto;
+}
+
+.navbar {
+	min-height: 10px;
+}
+.navbar-brand {
+	padding: 10px;
+	height: auto;
+}
+.navbar-brand h1 {
+	font-family: 'Lexend Peta', sans-serif;
+	color: #fff;
+	font-size: 2em;
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+#collapsable-nav ul#nav-list li  a {
+	height: 100%;
+}
+.navbar-brand a:hover, .navbar-brand a:focus{
+	text-decoration: none;
+}
+/* END NAVBAR */
+
+ul#nav-list {
+	height: 100%;
+	margin: 0px;
+}
+
+ul#nav-list li a {
+	text-align: center;
+	color: #eee;
+	border-bottom: 1px solid #555;
+}
+ul#nav-list li:nth-child(3) a {
+	border-bottom: none;
+}
+#nav-list li a:hover {
+	background-color: #eee;
+	color: #000;
+	transition: 0.7s;
+}
+
+
+nav#header-nav button {
+	border: none;
+	margin: 10px!important;
+}
+nav#header-nav button span {
+	border-radius: 50px;
+	background-color: #eee;
+	height: 5px;
+	width: 30px;
+}
+nav#header-nav button span:nth-child(3) {
+	margin-top: 12px;
+}
+nav#header-nav button:hover, nav#header-nav button:active, nav#header-nav button:focus {
+	background: none!important;
+}
+nav#header-nav button:hover span {
+	background-color: #555;
+	transition: 0.7s;
+
+}
+
+.heading h2 {
+	color: #222;
+	font-weight: bold;
+	font-size: 2.2em;
+}
+
+
+.menu-item {
+	border-radius: 50px;
+	padding: 30px;
+	padding-top:10px;
+	color: #222;
+}
+
+.menu-item .menu-item-title h3 {
+	font-size: 1.8em;
+	font-weight: bold;
+}
+
+.menu-item .menu-item-content p{
+	font-size: 1.1em;
+	text-indent: 50px;
+}
+
+.column-content:nth-child(1) .menu-item, .column-content:nth-child(1) .menu-item a  {
+	background-color: #D6EAA3;
+	color: #222;
+}
+
+.column-content:nth-child(2) .menu-item, .column-content:nth-child(2) .menu-item a {
+	background-color: #68AA6A;
+	color: #222;
+}
+
+.column-content:nth-child(3) .menu-item,  .column-content:nth-child(3) .menu-item a{
+	background-color: #0F3741;
+		color: #eee;
+}
+
+.back-to-top {
+	margin-top: 30px;
+}
+
+.col-sm-12, .col-xs-12 {
+	margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px){
+	#collapsable-nav {
+		display: none!important;
+	}
+}
