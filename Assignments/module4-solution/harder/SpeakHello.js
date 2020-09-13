@@ -4,9 +4,11 @@
 	var helloSpeaker = {};
 	var speakWord = "Hello";
 	// STEP 4:
-	helloSpeaker.speak = function () {
-	  console.log(speakWord + " " + names);
+	function speak (name) {
+	  console.log(speakWord + " " + name);
 	}
+
+	helloSpeaker.speak = speak;
 	// STEP 5: 
 	window.helloSpeaker = helloSpeaker;
 })(window);
